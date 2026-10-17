@@ -16,11 +16,14 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => item.classList.add("visible"));
 }
 
-// Moves the soft yellow light to follow the mouse.
-const spotlight = document.querySelector(".spotlight");
-if (spotlight && window.matchMedia("(pointer: fine)").matches) {
-  window.addEventListener("pointermove", (event) => {
-    spotlight.style.setProperty("--x", `${event.clientX}px`);
-    spotlight.style.setProperty("--y", `${event.clientY}px`);
+// Highlights the nav link for the section on screen.
+const navLinks = document.querySelectorAll(".nav-links a");
+const sections = [...navLinks].map((link) => document.querySelector(link.getAttribute("href")));
+
+window.addEventListener("scroll", () => {
+  let current = 0;
+  sections.forEach((section, index) => {
+    if (section && section.getBoundingClientRect().top < window.innerHeight * 0.4) current = index;
   });
-}
+  navLinks.forEach((link, index) => link.classList.toggle("active", index === current));
+}, { passive: true });
