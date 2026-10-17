@@ -3,53 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rhobe Arkin Ipac | Resume</title>
+  <title>Rhobe Arkin Ipac | Cloud Engineer</title>
+  <meta name="description" content="Resume of Rhobe Arkin Ipac, BSIT student at National University Clark building on Microsoft Azure.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Rhobe Arkin Ipac</h1>
-    <p>BSIT Student at National University Clark · Aspiring Cloud Engineer (Azure)</p>
-    <p>
-      <a href="mailto:rhobearkinipac@gmail.com">Email</a> ·
-      <a href="https://github.com/ArkinIpac">GitHub</a>
-    </p>
+  <!-- Moving blurred shapes behind the glass cards -->
+  <div class="backdrop" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid"></div>
+  </div>
+
+  <nav class="nav glass">
+    <a href="#top" class="logo">RA<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero-text reveal">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Rhobe Arkin <span class="gradient-text">Ipac</span></h1>
+      <p class="tagline">BSIT student at National University Clark, building toward a career as a <strong>Cloud Solutions Architect</strong> on Microsoft Azure.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:rhobearkinipac@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://github.com/ArkinIpac" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <div class="photo-frame glass">
+        <img src="img/profile.jpg" alt="Portrait of Rhobe Arkin Ipac" width="639" height="820">
+      </div>
+      <div class="badge glass"><span class="dot"></span> Building on Azure</div>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Summary</h2>
-      <p>TODO: two lines about you.</p>
+    <section id="about" class="section">
+      <h2 class="section-title reveal"><span>01</span> About</h2>
+      <div class="cards-2">
+        <article class="card glass reveal">
+          <h3>Summary</h3>
+          <p>BSIT student aiming to become a Cloud Solutions Architect. Currently building and deploying projects on Microsoft Azure.</p>
+        </article>
+        <article class="card glass reveal">
+          <h3>Education</h3>
+          <p><strong>Bachelor of Science in Information Technology</strong><br>National University Clark<br><span class="muted">Expected graduation: YEAR</span></p>
+        </article>
+        <article class="card glass reveal">
+          <h3>Certifications</h3>
+          <p>Microsoft Certified: Azure Fundamentals (AZ-900)</p>
+          <span class="pill pill-progress">In progress</span>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Education</h2>
-      <p>TODO: degree, school, expected graduation.</p>
+    <section id="projects" class="section">
+      <h2 class="section-title reveal"><span>02</span> Projects</h2>
+
+      <article class="project glass reveal">
+        <div class="project-head">
+          <h3>Cloud Resume Challenge on Azure</h3>
+          <span class="pill pill-progress">In progress</span>
+        </div>
+        <ul>
+          <li>Building this resume site on Azure Static Web Apps with a custom domain, HTTPS and Azure DNS.</li>
+          <li>Writing a Python Azure Function API with Cosmos DB to count visitors.</li>
+          <li>Defining the infrastructure in Bicep and deploying it automatically with GitHub Actions and tests.</li>
+        </ul>
+        <div class="tags">
+          <span>Azure</span><span>Python</span><span>Cosmos DB</span><span>Bicep</span><span>GitHub Actions</span>
+        </div>
+        <a class="project-link" href="https://github.com/ArkinIpac/cloud_resume" target="_blank" rel="noopener">View code →</a>
+      </article>
+
+      <article class="project glass reveal">
+        <div class="project-head">
+          <h3>Lime Gym: Equipment Maintenance System</h3>
+          <span class="pill">Team of 5</span>
+        </div>
+        <ul>
+          <li>Full-stack web app (Java, HTML/CSS/JS, MySQL) that tells gym staff which of 5,000 machines to repair first.</li>
+          <li>Built six data structures from scratch: queue, max-heap, BST, hash table, linked list and graph, with BFS for the shortest route on the gym floor.</li>
+          <li>Benchmarked on 5,000 records: hash-table lookup was about 120x faster than linear search.</li>
+          <li>Added roles, PBKDF2 password hashing, login lockout and CSRF protection in plain Java.</li>
+        </ul>
+        <div class="tags">
+          <span>Java</span><span>MySQL</span><span>JavaScript</span><span>Data Structures</span><span>Security</span>
+        </div>
+        <a class="project-link" href="https://github.com/ArkinIpac/Lime_Gym" target="_blank" rel="noopener">View code →</a>
+      </article>
     </section>
 
-    <section>
-      <h2>Certifications</h2>
-      <p>Microsoft Certified: Azure Fundamentals (AZ-900), in progress</p>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <h3>Cloud Resume Challenge on Azure</h3>
-      <p>TODO: bullets from the plan.</p>
-      <h3>Lime Gym</h3>
-      <p>TODO: bullets from the plan.</p>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <p>TODO: languages, cloud, tools.</p>
+    <section id="skills" class="section">
+      <h2 class="section-title reveal"><span>03</span> Skills</h2>
+      <div class="cards-3">
+        <article class="card glass reveal">
+          <h3>Cloud</h3>
+          <div class="chips"><span>Microsoft Azure</span><span>Static Web Apps</span><span>Azure Functions</span><span>Cosmos DB</span></div>
+        </article>
+        <article class="card glass reveal">
+          <h3>Languages</h3>
+          <div class="chips"><span>Java</span><span>Python</span><span>JavaScript</span><span>SQL</span><span>HTML/CSS</span></div>
+        </article>
+        <article class="card glass reveal">
+          <h3>Tools</h3>
+          <div class="chips"><span>Git &amp; GitHub</span><span>VS Code</span><span>MySQL</span><span>Docker</span></div>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>This page has been viewed <span id="counter">…</span> times.</p>
+  <footer class="footer">
+    <div class="counter glass">
+      <span class="dot"></span>
+      This page has been viewed <strong id="counter">…</strong> times
+    </div>
+    <p class="muted">© 2026 Rhobe Arkin Ipac · Hosted on Microsoft Azure</p>
   </footer>
 
   <script src="counter.js"></script>
+  <script src="reveal.js"></script>
 </body>
 </html>
