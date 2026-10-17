@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-node-azure-pack",
+    "ms-python.python",
+    "ms-azuretools.vscode-bicep",
+    "github.vscode-github-actions"
+  ]
+}
