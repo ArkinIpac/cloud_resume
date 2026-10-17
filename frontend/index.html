@@ -5,171 +5,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rhobe Arkin Ipac | Cloud Engineer</title>
   <meta name="description" content="Resume of Rhobe Arkin Ipac, BSIT student at National University Clark building on Microsoft Azure.">
-  <meta name="theme-color" content="#060603">
+  <meta name="theme-color" content="#070707">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="nav">
-    <a href="#top" class="logo" aria-label="Home">RA</a>
+    <a href="#top" class="logo">RA</a>
     <div class="nav-links">
-      <a href="#top" class="active">Home</a>
       <a href="#about">About</a>
+      <a href="#projects">Work</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
     </div>
+    <a href="mailto:rhobearkinipac@gmail.com" class="nav-cta">Email me</a>
   </nav>
 
-  <header id="top" class="hero">
-    <div class="hero-photo reveal">
-      <div class="photo-glow" aria-hidden="true"></div>
-      <img src="img/profile.jpg" alt="Portrait of Rhobe Arkin Ipac" width="639" height="820">
-    </div>
-    <div class="hero-text reveal">
-      <p class="hello">Hello, I'm Arkin</p>
-      <h1>Rhobe Arkin Ipac</h1>
-      <p class="role">Aspiring Cloud Solutions Architect</p>
-      <p class="tagline">BSIT student at National University Clark, building toward a career as a Cloud Solutions Architect on Microsoft Azure.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#projects">See my work</a>
-        <a class="btn btn-ghost" href="https://github.com/ArkinIpac" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Every number links to the file that proves it -->
-  <section class="stats reveal" aria-label="Highlights">
-    <a class="stat" href="https://github.com/ArkinIpac/Lime_Gym/blob/main/benchmarks/benchmark_results.csv" target="_blank" rel="noopener">
-      <strong>119x</strong><span>Faster lookup with my hash table</span><em>Proof ↗</em>
-    </a>
-    <a class="stat" href="https://github.com/ArkinIpac/Lime_Gym/tree/main/src/structures" target="_blank" rel="noopener">
-      <strong>6</strong><span>Data structures built from scratch</span><em>Proof ↗</em>
-    </a>
-    <a class="stat" href="https://github.com/ArkinIpac/Lime_Gym/blob/main/data/equipment_dataset.csv" target="_blank" rel="noopener">
-      <strong>5,000</strong><span>Records in the Lime Gym dataset</span><em>Proof ↗</em>
-    </a>
-    <a class="stat" href="https://github.com/ArkinIpac/cloud_resume/blob/main/tests/test_counter.py" target="_blank" rel="noopener">
-      <strong>5</strong><span>Automated tests on my Azure API</span><em>Proof ↗</em>
-    </a>
-  </section>
-
-  <main>
-    <section id="about" class="section">
-      <h2 class="section-title reveal">About me</h2>
-      <p class="section-sub reveal">BSIT student aiming to become a Cloud Solutions Architect. Currently building and deploying projects on Microsoft Azure.</p>
-      <div class="about-grid">
-        <article class="card reveal">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
-          </div>
-          <h3>Education</h3>
-          <p><strong>Bachelor of Science in Information Technology</strong><br>National University Clark<br>Expected graduation: 2029</p>
-        </article>
-        <article class="card reveal">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M9 14.5L7.5 22 12 19.5 16.5 22 15 14.5"/></svg>
-          </div>
-          <h3>Certifications</h3>
-          <p><strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong></p>
-          <span class="pill">In progress</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <h2 class="section-title reveal">Skills</h2>
-      <p class="section-sub reveal">What I use to build and ship.</p>
-      <div class="skills-grid">
-        <article class="card reveal">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 01-.6-9 6 6 0 0111.5 1.5A3.75 3.75 0 0117.5 18z"/></svg>
-          </div>
-          <h3>Cloud</h3>
-          <ul><li>Microsoft Azure</li><li>Static Web Apps</li><li>Azure Functions</li><li>Cosmos DB</li><li>Serverless APIs</li></ul>
-        </article>
-        <article class="card card-featured reveal">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/><path d="M14 4l-4 16"/></svg>
-          </div>
-          <h3>Languages</h3>
-          <ul><li>Java</li><li>Python</li><li>JavaScript</li><li>SQL</li><li>HTML/CSS</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 005 5L21 13l-8 8-2-2 1.3-1.3a4 4 0 00-5-5L6 14l-3-3 8-8 3 3z"/></svg>
-          </div>
-          <h3>Tools</h3>
-          <ul><li>Git &amp; GitHub</li><li>GitHub Actions (CI/CD)</li><li>pytest</li><li>VS Code</li><li>MySQL</li><li>Docker</li></ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <h2 class="section-title reveal">Featured projects</h2>
-      <p class="section-sub reveal">Real code, real numbers. Click through to check them.</p>
-
-      <div class="projects-grid">
-        <article class="project reveal">
-          <a class="project-visual" href="https://github.com/ArkinIpac/cloud_resume" target="_blank" rel="noopener">
-            <img src="img/project-resume.jpg" alt="Screenshot of this resume site" width="800" height="500" loading="lazy">
-            <span class="pill pill-float">In progress</span>
+  <main id="top" class="page">
+    <!-- Intro bento -->
+    <section class="bento" aria-label="Introduction">
+      <div class="tile tile-intro reveal">
+        <span class="chip"><span class="dot"></span> Open to Azure internships</span>
+        <h1>Rhobe Arkin Ipac</h1>
+        <p class="role">Aspiring <span class="hl">Cloud Solutions Architect</span></p>
+        <p class="tagline">BSIT student at National University Clark, building toward a career as a Cloud Solutions Architect on Microsoft Azure.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">View my work <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="https://github.com/ArkinIpac" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .5z"/></svg>
+            GitHub
           </a>
-          <div class="project-body">
-            <h3>Cloud Resume Challenge on Azure</h3>
-            <ul>
-              <li>Building this resume site on Azure Static Web Apps with a custom domain, HTTPS and Azure DNS.</li>
-              <li>Built a Python Azure Function API backed by Cosmos DB (free tier) that counts visitors, tested with pytest.</li>
-              <li>Defining the infrastructure in Bicep and deploying it automatically with GitHub Actions and tests.</li>
-            </ul>
-            <div class="tags"><span>Azure</span><span>Python</span><span>Cosmos DB</span><span>Bicep</span><span>GitHub Actions</span></div>
-            <a class="project-link" href="https://github.com/ArkinIpac/cloud_resume" target="_blank" rel="noopener">View code ↗</a>
-          </div>
-        </article>
+        </div>
+      </div>
 
-        <article class="project reveal">
-          <a class="project-visual chart" href="https://github.com/ArkinIpac/Lime_Gym/blob/main/benchmarks/benchmark_results.csv" target="_blank" rel="noopener" aria-label="Benchmark results on GitHub">
-            <p class="chart-title">Lookup time on 5,000 records</p>
-            <div class="bar-row"><span>Linear search</span><div class="bar"><i style="--w: 100%"></i></div><b>11,554 ns</b></div>
-            <div class="bar-row"><span>Binary search</span><div class="bar"><i style="--w: 2.03%"></i></div><b>235 ns</b></div>
-            <div class="bar-row"><span>BST</span><div class="bar"><i style="--w: 1.44%"></i></div><b>166 ns</b></div>
-            <div class="bar-row hl"><span>Hash table</span><div class="bar"><i style="--w: 0.84%"></i></div><b>97 ns</b></div>
-            <p class="chart-source">Source: benchmarks/benchmark_results.csv ↗</p>
-            <span class="pill pill-float pill-plain">Team of 5</span>
-          </a>
-          <div class="project-body">
-            <h3>Lime Gym: Equipment Maintenance System</h3>
-            <ul>
-              <li>Full-stack web app (Java, HTML/CSS/JS, MySQL) that tells gym staff which of 5,000 machines to repair first.</li>
-              <li>Built six data structures from scratch: queue, max-heap, BST, hash table, linked list and graph, with BFS for the shortest route on the gym floor.</li>
-              <li>Benchmarked on 5,000 records: hash-table lookup was about 120x faster than linear search.</li>
-              <li>Added roles, PBKDF2 password hashing, login lockout and CSRF protection in plain Java.</li>
-            </ul>
-            <div class="tags"><span>Java</span><span>MySQL</span><span>JavaScript</span><span>Data Structures</span><span>Security</span></div>
-            <a class="project-link" href="https://github.com/ArkinIpac/Lime_Gym" target="_blank" rel="noopener">View code ↗</a>
-          </div>
+      <figure class="tile tile-photo reveal">
+        <img src="img/profile.jpg" alt="Portrait of Rhobe Arkin Ipac" width="639" height="820">
+        <figcaption class="glass-chip">NU Clark · Class of 2029</figcaption>
+      </figure>
+
+      <!-- Every number links to the file that proves it -->
+      <a class="tile tile-stat reveal" href="https://github.com/ArkinIpac/Lime_Gym/blob/main/benchmarks/benchmark_results.csv" target="_blank" rel="noopener">
+        <strong>119<small>x</small></strong><span>Faster lookup with my hash table</span><em>Proof ↗</em>
+      </a>
+      <a class="tile tile-stat reveal" href="https://github.com/ArkinIpac/Lime_Gym/tree/main/src/structures" target="_blank" rel="noopener">
+        <strong>6</strong><span>Data structures built from scratch</span><em>Proof ↗</em>
+      </a>
+      <a class="tile tile-stat reveal" href="https://github.com/ArkinIpac/Lime_Gym/blob/main/data/equipment_dataset.csv" target="_blank" rel="noopener">
+        <strong>5,000</strong><span>Records in the Lime Gym dataset</span><em>Proof ↗</em>
+      </a>
+      <a class="tile tile-stat reveal" href="https://github.com/ArkinIpac/cloud_resume/blob/main/tests/test_counter.py" target="_blank" rel="noopener">
+        <strong>5</strong><span>Automated tests on my Azure API</span><em>Proof ↗</em>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="block">
+      <header class="block-head reveal">
+        <span class="eyebrow">About</span>
+        <h2>BSIT student aiming to become a Cloud Solutions Architect. Currently building and deploying projects on Microsoft Azure.</h2>
+      </header>
+      <div class="bento bento-3">
+        <article class="tile reveal">
+          <span class="eyebrow">Education</span>
+          <h3>Bachelor of Science in Information Technology</h3>
+          <p>National University Clark</p>
+          <p class="muted">Expected graduation: 2029</p>
+        </article>
+        <article class="tile reveal">
+          <span class="eyebrow">Certifications</span>
+          <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+          <span class="badge">In progress</span>
+        </article>
+        <article class="tile tile-live reveal">
+          <span class="eyebrow"><span class="dot"></span> Live visitors</span>
+          <strong id="counter" class="counter-num">…</strong>
+          <p class="muted">People who opened this page, counted by my own API.</p>
+          <code class="flow">GET /api/counter → Azure Functions → Cosmos DB</code>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="cta reveal">
+    <!-- Projects -->
+    <section id="projects" class="block">
+      <header class="block-head reveal">
+        <span class="eyebrow">Selected work</span>
+        <h2>Projects</h2>
+      </header>
+
+      <article class="tile project reveal">
+        <a class="project-visual" href="https://github.com/ArkinIpac/cloud_resume" target="_blank" rel="noopener">
+          <img src="img/project-resume.jpg" alt="Screenshot of this resume site" width="800" height="500" loading="lazy">
+        </a>
+        <div class="project-body">
+          <div class="project-meta"><span class="badge">In progress</span><span class="muted mono">01</span></div>
+          <h3>Cloud Resume Challenge on Azure</h3>
+          <ul>
+            <li>Building this resume site on Azure Static Web Apps with a custom domain, HTTPS and Azure DNS.</li>
+            <li>Built a Python Azure Function API backed by Cosmos DB (free tier) that counts visitors, tested with pytest.</li>
+            <li>Defining the infrastructure in Bicep and deploying it automatically with GitHub Actions and tests.</li>
+          </ul>
+          <div class="tags"><span>Azure</span><span>Python</span><span>Cosmos DB</span><span>Bicep</span><span>GitHub Actions</span></div>
+          <a class="link" href="https://github.com/ArkinIpac/cloud_resume" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="tile project reveal">
+        <a class="project-visual chart" href="https://github.com/ArkinIpac/Lime_Gym/blob/main/benchmarks/benchmark_results.csv" target="_blank" rel="noopener" aria-label="Benchmark results on GitHub">
+          <p class="chart-title">Lookup time on 5,000 records</p>
+          <div class="bar-row"><span>Linear search</span><div class="bar"><i style="--w: 100%"></i></div><b>11,554 ns</b></div>
+          <div class="bar-row"><span>Binary search</span><div class="bar"><i style="--w: 2.03%"></i></div><b>235 ns</b></div>
+          <div class="bar-row"><span>BST</span><div class="bar"><i style="--w: 1.44%"></i></div><b>166 ns</b></div>
+          <div class="bar-row on"><span>Hash table</span><div class="bar"><i style="--w: 0.84%"></i></div><b>97 ns</b></div>
+          <p class="chart-source mono">benchmarks/benchmark_results.csv ↗</p>
+        </a>
+        <div class="project-body">
+          <div class="project-meta"><span class="badge badge-plain">Team of 5</span><span class="muted mono">02</span></div>
+          <h3>Lime Gym: Equipment Maintenance System</h3>
+          <ul>
+            <li>Full-stack web app (Java, HTML/CSS/JS, MySQL) that tells gym staff which of 5,000 machines to repair first.</li>
+            <li>Built six data structures from scratch: queue, max-heap, BST, hash table, linked list and graph, with BFS for the shortest route on the gym floor.</li>
+            <li>Benchmarked on 5,000 records: hash-table lookup was about 120x faster than linear search.</li>
+            <li>Added roles, PBKDF2 password hashing, login lockout and CSRF protection in plain Java.</li>
+          </ul>
+          <div class="tags"><span>Java</span><span>MySQL</span><span>JavaScript</span><span>Data Structures</span><span>Security</span></div>
+          <a class="link" href="https://github.com/ArkinIpac/Lime_Gym" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="block">
+      <header class="block-head reveal">
+        <span class="eyebrow">Toolbox</span>
+        <h2>Skills</h2>
+      </header>
+      <div class="bento bento-3">
+        <article class="tile reveal">
+          <span class="eyebrow">Cloud</span>
+          <div class="chips"><span>Microsoft Azure</span><span>Static Web Apps</span><span>Azure Functions</span><span>Cosmos DB</span><span>Serverless APIs</span></div>
+        </article>
+        <article class="tile reveal">
+          <span class="eyebrow">Languages</span>
+          <div class="chips"><span>Java</span><span>Python</span><span>JavaScript</span><span>SQL</span><span>HTML/CSS</span></div>
+        </article>
+        <article class="tile reveal">
+          <span class="eyebrow">Tools</span>
+          <div class="chips"><span>Git &amp; GitHub</span><span>GitHub Actions (CI/CD)</span><span>pytest</span><span>VS Code</span><span>MySQL</span><span>Docker</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="tile tile-cta reveal">
       <div>
-        <h2>Let's build something<br>on Azure together</h2>
+        <h2>Let's build something on Azure together.</h2>
         <p>Open to Azure internships. Email is the fastest way to reach me.</p>
       </div>
-      <a class="btn btn-primary" href="mailto:rhobearkinipac@gmail.com">Email me</a>
+      <a class="btn btn-dark" href="mailto:rhobearkinipac@gmail.com">rhobearkinipac@gmail.com <span aria-hidden="true">→</span></a>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="counter">
-      <span class="dot"></span>
-      This page has been viewed <strong id="counter">…</strong> times
-      <span class="counter-note">(live from Azure Functions + Cosmos DB)</span>
-    </div>
-    <p>© 2026 Rhobe Arkin Ipac · Hosted on Microsoft Azure</p>
+    <span>© 2026 Rhobe Arkin Ipac</span>
+    <span>Hosted on Microsoft Azure</span>
   </footer>
 
   <script src="counter.js"></script>

@@ -21,9 +21,18 @@ const navLinks = document.querySelectorAll(".nav-links a");
 const sections = [...navLinks].map((link) => document.querySelector(link.getAttribute("href")));
 
 window.addEventListener("scroll", () => {
-  let current = 0;
+  let current = -1;
   sections.forEach((section, index) => {
     if (section && section.getBoundingClientRect().top < window.innerHeight * 0.4) current = index;
   });
   navLinks.forEach((link, index) => link.classList.toggle("active", index === current));
 }, { passive: true });
+
+// Lets each tile glow where the mouse is.
+document.querySelectorAll(".tile").forEach((tile) => {
+  tile.addEventListener("pointermove", (event) => {
+    const box = tile.getBoundingClientRect();
+    tile.style.setProperty("--mx", `${event.clientX - box.left}px`);
+    tile.style.setProperty("--my", `${event.clientY - box.top}px`);
+  });
+});
