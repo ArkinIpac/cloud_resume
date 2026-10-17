@@ -33,8 +33,8 @@ GitHub ──GitHub Actions──> tests ──> Bicep deploy ──> site + API
 
 ## Progress
 
-- [ ] Resume page in HTML/CSS
-- [ ] Hosted on Azure Static Web Apps (HTTPS included)
+- [x] Resume page in HTML/CSS
+- [x] Hosted on Azure Static Web Apps (HTTPS included)
 - [ ] Custom domain with Azure DNS
 - [ ] JavaScript visitor counter
 - [ ] Cosmos DB table for the count
