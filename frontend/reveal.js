@@ -15,3 +15,12 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("visible"));
 }
+
+// Moves the soft yellow light to follow the mouse.
+const spotlight = document.querySelector(".spotlight");
+if (spotlight && window.matchMedia("(pointer: fine)").matches) {
+  window.addEventListener("pointermove", (event) => {
+    spotlight.style.setProperty("--x", `${event.clientX}px`);
+    spotlight.style.setProperty("--y", `${event.clientY}px`);
+  });
+}
