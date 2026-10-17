@@ -46,4 +46,10 @@ GitHub ──GitHub Actions──> tests ──> Bicep deploy ──> site + API
 
 ## Run it locally
 
-Open `frontend/index.html` in a browser. The API and tests get their own instructions once they exist.
+- **Site:** open `frontend/index.html` with Live Server in VS Code.
+- **Tests:**
+  ```
+  pip install -r tests/requirements.txt
+  python -m pytest tests
+  ```
+- **API settings:** the function reads the Cosmos DB connection string from the `COSMOS_CONNECTION_STRING` setting. In Azure it lives in the Static Web App's environment variables, never in the code.

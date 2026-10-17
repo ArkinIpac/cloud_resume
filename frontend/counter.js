@@ -1,5 +1,16 @@
-// Visitor counter.
-// For now it shows a fake number. In step 9 of the plan, replace it with a
-// fetch() call to the Azure Function in api/.
+// Visitor counter: asks the Azure Function for the new count and shows it.
 const counterElement = document.getElementById("counter");
-counterElement.textContent = "0";
+
+async function updateCounter() {
+  try {
+    const response = await fetch("/api/counter");
+    if (!response.ok) throw new Error(`API returned ${response.status}`);
+    const data = await response.json();
+    counterElement.textContent = data.count.toLocaleString();
+  } catch (error) {
+    console.error("Visitor counter failed:", error);
+    counterElement.textContent = "—";
+  }
+}
+
+updateCounter();
