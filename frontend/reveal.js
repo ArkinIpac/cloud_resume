@@ -36,3 +36,17 @@ document.querySelectorAll(".tile").forEach((tile) => {
     tile.style.setProperty("--my", `${event.clientY - box.top}px`);
   });
 });
+
+// Counts the stat numbers up the first time they scroll into view.
+const statNumbers = document.querySelectorAll(".num[data-count]");
+if ("IntersectionObserver" in window && typeof countUp === "function") {
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        countUp(entry.target, Number(entry.target.dataset.count));
+        statObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+  statNumbers.forEach((number) => statObserver.observe(number));
+}
