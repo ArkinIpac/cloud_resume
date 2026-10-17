@@ -36,10 +36,10 @@ GitHub ──GitHub Actions──> tests ──> Bicep deploy ──> site + API
 - [x] Resume page in HTML/CSS
 - [x] Hosted on Azure Static Web Apps (HTTPS included)
 - [ ] Custom domain with Azure DNS
-- [ ] JavaScript visitor counter
-- [ ] Cosmos DB table for the count
-- [ ] Python Azure Function API
-- [ ] pytest tests
+- [x] JavaScript visitor counter
+- [x] Cosmos DB (free tier) for the count
+- [x] Python Azure Function API
+- [x] pytest tests
 - [ ] Infrastructure as code with Bicep
 - [ ] CI/CD with GitHub Actions
 - [ ] Blog post about the build
