@@ -2,7 +2,7 @@
 
 My resume as a live website on Microsoft Azure, with a visitor counter, built end to end: static hosting, HTTPS, DNS, JavaScript, an API, a database, Python, tests, infrastructure as code and CI/CD.
 
-**Live site:** _coming soon_
+**Live site:** https://salmon-ground-09368c300.4.azurestaticapps.net/
 
 ## Architecture
 
